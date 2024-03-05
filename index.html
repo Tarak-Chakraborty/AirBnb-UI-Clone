@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/3270d31f17.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav id="navBar">
+            <a href="./listing.html">
+            <img src="./images/logo.png" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#popular" class="active">Popular Places</a></li>
+                <li><a href="#outside">Travel Outside</a></li>
+                <li><a href="#stories">Travellers Stories</a></li>
+                <li><a href="./listing.html">Online Packages</a></li>
+            </ul>
+            <a href="#" class="register-btn">Register Now</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+        </nav>
+        <div class="container">
+            <h1>Find Your Next Stay</h1>
+            <div class="search-bar">
+                <form>
+                    <div class="location-input">
+                        <label>Location</label>
+                        <input type="text" placeholder="Where are you going">
+                    </div>
+                    <div>
+                        <label>Check In</label>
+                        <input type="text" placeholder="Add Date">
+                    </div>
+                    <div>
+                        <label>Check Out</label>
+                        <input type="text" placeholder="Where are you going">
+                    </div>
+                    <div>
+                        <label>Guest</label>
+                        <input type="text" placeholder="Add Guest">
+                    </div>
+                    <button type="submit"><img src="./images/search.png"></button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <h2 class="sub-title" id="outside">Exclusives</h2>
+        <div class="exclusives">
+            <div>
+                <a href="./listing.html"><img src="./images/image-1.png"></a>
+                <span>
+                    <h3>San Francisco</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-2.png">
+                <span>
+                    <h3>Switzerland</h3>
+                    <p>Starts @ $350</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-3.png">
+                <span>
+                    <h3>Australia</h3>
+                    <p>Starts @ $200</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-4.png">
+                <span>
+                    <h3>France</h3>
+                    <p>Starts @ $550</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-5.png">
+                <span>
+                    <h3>Amsterdam</h3>
+                    <p>Starts @ $350</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-6.png">
+                <span>
+                    <h3>Netherland</h3>
+                    <p>Starts @ $650</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-7.png">
+                <span>
+                    <h3>Newyork</h3>
+                    <p>Starts @ $750</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-8.png">
+                <span>
+                    <h3>Chicago</h3>
+                    <p>Starts @ $600</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-9.png">
+                <span>
+                    <h3>San Francisco</h3>
+                    <p>Starts @ $400</p>
+                </span>
+            </div>
+            <div>
+                <img src="./images/image-10.png">
+                <span>
+                    <h3>Sanghai</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+        </div>
+        <h2 class="sub-title" id="popular">Tranding Places</h2>
+        <div class="trending">
+            <div>
+                <img src="./images/dubai.png" alt="">
+                <h3>Dubai</h3>
+            </div>
+            <div>
+                <img src="./images/new-york.png" alt="">
+                <h3>New York</h3>
+            </div>
+            <div>
+                <img src="./images/paris.png" alt="">
+                <h3>Paris</h3>
+            </div>
+            <div>
+                <img src="./images/new-delhi.png" alt="">
+                <h3>New Delhi</h3>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h3>Sharing <br> Is Earning Now</h3>
+            <p>Great oppertunity to make money by <br> sharing your extra space.</p>
+            <a href="#" class="cta-btn">Know More</a>
+        </div>
+        <h2 class="sub-title" id="stories">Travellers Stories</h2>
+        <div class="stories">
+            <div>
+                <img src="./images/story-1.png">
+                <p>Popular European countries with a budget of just $10,000</p>
+            </div>
+            <div>
+                <img src="./images/story-2.png">
+                <p>Traveled more than 100 Countries in less than a year</p>
+            </div>
+            <div>
+                <img src="./images/story-3.png">
+                <p>Best experience you get while travelling to Thailand</p>
+            </div>
+        </div>
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201879.85727976804!2d-122.60240724800661!3d37.75785670603796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1686382837960!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>San Francisco, California, United States</b>
+            <p>It's like a home away from home.</p>
+        </div>
+        <a href="#" class="start-btn">Start Making Money</a>
+        <div class="about-msg">
+            <h2>About Staybnb</h2>
+            <p>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Libero, distinctio
+                vero! Praesentium quia fugit ducimus rem cum nisi 
+                libero! Rerum laboriosam amet, quod eligendi explicabo
+                provident excepturi. Magni unde nobis sint accusamus 
+                quia eveniet molestias accusantium error quasi quam 
+                inventore excepturi nostrum ipsa velit, rem itaque 
+                necessitatibus aliquid alias ipsum!</p>
+        </div>
+        <div class="footer">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright @ 2023, Tarak Chakraborty.</p>
+
+        </div>
+    </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
+</body>
+</html>
